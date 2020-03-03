@@ -10,6 +10,7 @@ Requirements:
   (python3 -m pip install python-Levenshtein)
 
 Options:
+
 -i --input : Input file in fastq of fasta format
 
 -s --similar: Similarity to add a read to the consensus (value between 50 and 100). Default=85.0
