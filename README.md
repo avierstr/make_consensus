@@ -12,13 +12,11 @@ Requirements:
 Options:
 
 -i --input : Input file in fastq of fasta format
-
--s --similar: Similarity to add a read to the consensus (value between 50 and 100). Default=85.0
+-s --similar: Similarity to add a read to the consensus (value between 50 and 100). Default=85.0 for nanopore reads
 
 The script compares every sequence (in forward and reverse direction) with the first sequence in the file.  If a sequence is in reverse order, it takes the complement reverse for the consensus.  By default, the similarity between the sequences has to be >= 85%, otherwise it is excluded.  For this reason, it is important that the first sequence in the file is one that you want for the consensus and not a very different one.
 
 Command examples:
 
 python3 make_consensus.py -i inputset1.fasta
-
 python3 make_consensus.py --input inputset2.fastq --similar 90
